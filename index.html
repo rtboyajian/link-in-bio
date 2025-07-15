@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -29,7 +29,6 @@
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.2s;
-
         }
   .main-container {
     max-width: 640px;
@@ -52,27 +51,32 @@
       padding-right: 53px;
       box-shadow: 4px 4px 10px 0px rgba(19, 176, 188, 0.8);
     }
+    .item:hover .thumbnail {
+      transform: scale(1.1);
+    }
     .image-row {
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
       text-align: center;
     }
     .name-row {
-      margin-bottom: 30px;
+      margin-bottom: 1.5rem;
       text-align: center;
-      font-family: "Playfair Display";
+      font-family: 'Playfair Display', serif;
       font-size: 24px;
       font-weight: 900;
     }
-    .social-icons-row i {
-      margin-bottom: 30px;
+    .social-icons-row {
+      margin-bottom: 1.5rem;
       display: flex;
-      justify-content: space-around;
-        font-size: 1.8rem;
-        margin: 0 0.6rem;
-        transition: transform 0.2s;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .social-icons-row i {
+      font-size: 1.8 rem;
+      transition: transform 0.2s;
     }
     .social-icons-row a:hover i {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
     body {
       color: rgba(255, 255, 255, 1.0);
@@ -87,6 +91,11 @@
       flex-grow: 1;
       font-size: 1.1rem;
       font-weight: 600;
+      color: inherit;
+      text-decoration: none;
+    }
+    .link-text:hover {
+      text-decoration: underline;
     }
       </style>  
 </head>
